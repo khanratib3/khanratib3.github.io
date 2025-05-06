@@ -90,14 +90,14 @@
       margin-top: 0.5rem;
     }
     .project-content {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
+      margin-bottom: 1rem;
     }
-    .project-content img {
-      width: 120px;
+    .project img {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 1rem auto 0;
       border-radius: 8px;
-      flex-shrink: 0;
     }
     footer {
       text-align: center;
@@ -137,67 +137,60 @@
 
       <div class="project">
         <div class="project-content">
-          <img src="image/Screenshot 2025-05-05 224720.png" alt="ESP32 Audio Spectrum" />
-          <div>
-            <h3>ESP32 Audio Spectrum Analyzer</h3>
-            <p>
-              Designed ESP32 Audio Spectrum Analyzer with I2S mic and OLED screen to show spectral content up to 20 kHz.
-              Applied FFT on I2S data to convert from time domain with a hamming window function to reduce spectral leakage.
-              Determined FFT resolution and bin width to graph on OLED screen using I2C protocol. Verified accuracy of MCU system 
-              and graph by comparison with MATLAB FFT simulation.
-            </p>
-            <a href="https://imgur.com/a/etE6SqG" target="_blank" rel="noopener noreferrer">Watch Demo</a>
-          </div>
+          <h3>ESP32 Audio Spectrum Analyzer</h3>
+          <p>
+            Designed ESP32 Audio Spectrum Analyzer with I2S mic and OLED screen to show spectral content up to 20 kHz.
+            Applied FFT on I2S data to convert from time domain with a hamming window function to reduce spectral leakage.
+            Determined FFT resolution and bin width to graph on OLED screen using I2C protocol. Verified accuracy of MCU system 
+            and graph by comparison with MATLAB FFT simulation.
+          </p>
+          <a href="https://imgur.com/a/etE6SqG" target="_blank" rel="noopener noreferrer">Watch Demo</a>
         </div>
+        <img src="image/Screenshot 2025-05-05 224720.png" alt="ESP32 Audio Spectrum" />
       </div>
 
       <div class="project">
         <div class="project-content">
-          <img src="image/Screenshot 2025-05-05 224720.png" alt="RC Robot" />
-          <div>
-            <h3>RC Magnetic Field Detecting Robot</h3>
-            <p>
-              Designed and built a remote-controlled robot featuring an RF transmitter for wireless communication,
-              a joystick-controlled drive system using PWM and an H-bridge for speed and direction control, and a 
-              custom inductor-based metal detector that varies frequency with coin proximity. Integrated a 2-DOF
-              servo arm to pick up and store detected coins, enabling full autonomous coin retrieval.
-            </p>
-            <a href="https://drive.google.com/file/d/1Ek3MlwmoNSg09yN5K5u6NmEU-OzZbZ62/view?usp=sharing" target="_blank" rel="noopener noreferrer">Watch Demo</a>
-            <a href="https://drive.google.com/file/d/10LvokeESnsCr8N8OW1QXmxVXv4uJrqtg/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Image</a>
-          </div>
+          <h3>RC Magnetic Field Detecting Robot</h3>
+          <p>
+            Designed and built a remote-controlled robot featuring an RF transmitter for wireless communication,
+            a joystick-controlled drive system using PWM and an H-bridge for speed and direction control, and a 
+            custom inductor-based metal detector that varies frequency with coin proximity. Integrated a 2-DOF
+            servo arm to pick up and store detected coins, enabling full autonomous coin retrieval.
+          </p>
+          <a href="https://drive.google.com/file/d/1Ek3MlwmoNSg09yN5K5u6NmEU-OzZbZ62/view?usp=sharing" target="_blank" rel="noopener noreferrer">Watch Demo</a>
+          <a href="https://drive.google.com/file/d/10LvokeESnsCr8N8OW1QXmxVXv4uJrqtg/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Image</a>
         </div>
+        <img src="image/Screenshot 2025-05-05 224720.png" alt="RC Robot" />
       </div>
 
       <div class="project">
         <div class="project-content">
-          <img src="image/Screenshot 2025-05-05 224720.png" alt="Reflow Oven" />
-          <div>
-            <h3>Reflow Oven Controller</h3>
-            <p>
-              Programmed a reflow oven controller state machine on an 8051 microcontroller to control a standard toaster oven via a solid-state relay.
-              Utilized timers and PWM for precise temperature control, implemented user programmability 
-              for soak and reflow temperature/time settings, added a buzzer to signal process completion, and graphed 
-              the entire reflow profile in real time using a Python-based graph.
-            </p>
-            <a href="https://imgur.com/a/7cQ93t6" target="_blank" rel="noopener noreferrer">Watch Demo</a>
-          </div>
+          <h3>Reflow Oven Controller</h3>
+          <p>
+            Programmed a reflow oven controller state machine on an 8051 microcontroller to control a standard toaster oven via a solid-state relay.
+            Utilized timers and PWM for precise temperature control, implemented user programmability 
+            for soak and reflow temperature/time settings, added a buzzer to signal process completion, and graphed 
+            the entire reflow profile in real time using a Python-based graph.
+          </p>
+          <a href="https://imgur.com/a/7cQ93t6" target="_blank" rel="noopener noreferrer">Watch Demo</a>
         </div>
+        <img src="image/Screenshot 2025-05-05 224720.png" alt="Reflow Oven" />
       </div>
 
       <div class="project">
         <div class="project-content">
-          <img src="image/Screenshot 2025-05-05 224720.png" alt="Line Following Robot" />
-          <div>
-            <h3>Line Following Robot</h3>
-            <p>
-              Programmed a Pololu 3pi robot using C and a PIC18 microcontroller to navigate a 
-              line-following obstacle course by analyzing drive and sensor hardware, implementing 
-              PWM motor control, and using timing logic to handle road features like turns, gaps, and dead ends.
-            </p>
-            <a href="https://imgur.com/a/rbNc2C2" target="_blank" rel="noopener noreferrer">Watch Demo</a>
-          </div>
+          <h3>Line Following Robot</h3>
+          <p>
+            Programmed a Pololu 3pi robot using C and a PIC18 microcontroller to navigate a 
+            line-following obstacle course by analyzing drive and sensor hardware, implementing 
+            PWM motor control, and using timing logic to handle road features like turns, gaps, and dead ends.
+          </p>
+          <a href="https://imgur.com/a/rbNc2C2" target="_blank" rel="noopener noreferrer">Watch Demo</a>
         </div>
+        <img src="image/Screenshot 2025-05-05 224720.png" alt="Line Following Robot" />
       </div>
+
     </section>
 
     <section>
