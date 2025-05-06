@@ -89,15 +89,23 @@
       display: inline-block;
       margin-top: 0.5rem;
     }
-    .project-content {
-      margin-bottom: 1rem;
+    .video-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
     }
-    .project img {
+    iframe {
+      width: 45%;
+      height: 315px;
+    }
+    .image-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .image-container img {
       width: 100%;
-      max-width: 400px;
-      display: block;
-      margin: 1rem auto 0;
-      border-radius: 8px;
+      max-width: 500px;
     }
     footer {
       text-align: center;
@@ -120,90 +128,71 @@
   </header>
 
   <div class="container">
-
-    <img src="https://media.licdn.com/dms/image/v2/D5603AQHcus5ktdwdNQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1719613779596?e=2147483647&v=beta&t=4Pj8WBq7mwnGcziInXMoiqdX7NVaVFv9Jmzl-Tu_RnU" alt="Profile Picture" class="profile" />
-
-    <section>
-      <h2>Education</h2>
-      <p>
-        University of British Columbia<br>
-        BASc in Electrical Engineering<br>
-        2022 – Present
-      </p>
-    </section>
-
+    
     <section>
       <h2>Projects</h2>
 
+      <!-- ESP32 Audio Spectrum Analyzer -->
       <div class="project">
-        <div class="project-content">
-          <h3>ESP32 Audio Spectrum Analyzer</h3>
-          <p>
-            Designed ESP32 Audio Spectrum Analyzer with I2S mic and OLED screen to show spectral content up to 20 kHz.
-            Applied FFT on I2S data to convert from time domain with a hamming window function to reduce spectral leakage.
-            Determined FFT resolution and bin width to graph on OLED screen using I2C protocol. Verified accuracy of MCU system 
-            and graph by comparison with MATLAB FFT simulation.
-          </p>
-          <a href="https://imgur.com/a/etE6SqG" target="_blank" rel="noopener noreferrer">Watch Demo</a>
+        <h3>ESP32 Audio Spectrum Analyzer</h3>
+        <p>
+          Designed ESP32 Audio Spectrum Analyzer with I2S mic and OLED screen to show spectral content up to 20 kHz.
+          Applied FFT on I2S data to convert from time domain with a hamming window function to reduce spectral leakage.
+          Determined FFT resolution and bin width to graph on OLED screen using I2C protocol. Verified accuracy of MCU system 
+          and graph by comparison with MATLAB FFT simulation.
+        </p>
+
+        <!-- Two Videos Side by Side -->
+        <div class="video-container">
+          <iframe src="https://youtube.com/shorts/UAbES5_T3d4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://youtube.com/shorts/WD461JWiPi4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <img src="image/Screenshot 2025-05-05 224720.png" alt="ESP32 Audio Spectrum" />
       </div>
 
+      <!-- RC Metal Detector Car -->
       <div class="project">
-        <div class="project-content">
-          <h3>RC Magnetic Field Detecting Robot</h3>
-          <p>
-            Designed and built a remote-controlled robot featuring an RF transmitter for wireless communication,
-            a joystick-controlled drive system using PWM and an H-bridge for speed and direction control, and a 
-            custom inductor-based metal detector that varies frequency with coin proximity. Integrated a 2-DOF
-            servo arm to pick up and store detected coins, enabling full autonomous coin retrieval.
-          </p>
-          <a href="https://drive.google.com/file/d/1Ek3MlwmoNSg09yN5K5u6NmEU-OzZbZ62/view?usp=sharing" target="_blank" rel="noopener noreferrer">Watch Demo</a>
-          <a href="https://drive.google.com/file/d/10LvokeESnsCr8N8OW1QXmxVXv4uJrqtg/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Image</a>
+        <h3>RC Metal Detector Car</h3>
+        <p>
+          Designed and built a remote-controlled robot featuring an RF transmitter for wireless communication, a joystick-controlled drive system using PWM and an H-bridge for speed and direction control, and a custom inductor-based metal detector that varies frequency with coin proximity.
+        </p>
+
+        <div class="video-container">
+          <iframe src="https://youtu.be/KhvbS_NcjC8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <img src="image/Screenshot 2025-05-05 224720.png" alt="RC Robot" />
+
+        <div class="image-container">
+          <img src="image/pic.png" alt="RC Metal Detector Car" />
+        </div>
       </div>
 
+      <!-- Reflow Oven Controller -->
       <div class="project">
-        <div class="project-content">
-          <h3>Reflow Oven Controller</h3>
-          <p>
-            Programmed a reflow oven controller state machine on an 8051 microcontroller to control a standard toaster oven via a solid-state relay.
-            Utilized timers and PWM for precise temperature control, implemented user programmability 
-            for soak and reflow temperature/time settings, added a buzzer to signal process completion, and graphed 
-            the entire reflow profile in real time using a Python-based graph.
-          </p>
-          <a href="https://imgur.com/a/7cQ93t6" target="_blank" rel="noopener noreferrer">Watch Demo</a>
+        <h3>Reflow Oven Controller</h3>
+        <p>
+          Programmed a reflow oven controller state machine on an 8051 microcontroller to control a standard toaster oven via a solid-state relay. Utilized timers and PWM for precise temperature control, implemented user programmability for soak and reflow temperature/time settings, added a buzzer to signal process completion, and graphed the entire reflow profile in real-time using a Python-based graph.
+        </p>
+
+        <div class="video-container">
+          <iframe src="https://youtu.be/1xBySyaRcOk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <img src="image/Screenshot 2025-05-05 224720.png" alt="Reflow Oven" />
+
+        <div class="image-container">
+          <img src="image/reflowpic.png" alt="Reflow Oven Controller" />
+        </div>
       </div>
 
+      <!-- Line Following Robot -->
       <div class="project">
-        <div class="project-content">
-          <h3>Line Following Robot</h3>
-          <p>
-            Programmed a Pololu 3pi robot using C and a PIC18 microcontroller to navigate a 
-            line-following obstacle course by analyzing drive and sensor hardware, implementing 
-            PWM motor control, and using timing logic to handle road features like turns, gaps, and dead ends.
-          </p>
-          <a href="https://imgur.com/a/rbNc2C2" target="_blank" rel="noopener noreferrer">Watch Demo</a>
-        </div>
-        <img src="image/Screenshot 2025-05-05 224720.png" alt="Line Following Robot" />
-      </div>
+        <h3>Line Following Robot</h3>
+        <p>
+          Programmed a Pololu 3pi robot using C and a PIC18 microcontroller to navigate a line-following obstacle course by analyzing drive and sensor hardware, implementing PWM motor control, and using timing logic to handle road features like turns, gaps, and dead ends.
+        </p>
 
+        <div class="video-container">
+          <iframe src="https://youtu.be/M7R2M71K_JY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
     </section>
-
-    <section>
-      <h2>Course Topics</h2>
-      <ul>
-        <li>Computing Systems/Digital Systems Design</li>
-        <li>Control Systems</li>
-        <li>Embedded Systems</li>
-        <li>Motors and Generators</li>
-        <li>AC and DC circuit analysis</li>
-      </ul>
-    </section>
-
   </div>
 
   <footer>
