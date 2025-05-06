@@ -16,6 +16,9 @@
       --accent: #3b82f6;
       --text: #f1f5f9;
       --muted: #94a3b8;
+      --text-darker: #b0b7c3; /* Slightly darker text */
+      --gradient-start: rgba(59, 130, 246, 0.2);
+      --gradient-end: rgba(59, 130, 246, 0.05);
     }
     * {
       box-sizing: border-box;
@@ -28,31 +31,34 @@
     }
     header {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      gap: 1.5rem;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
       background-color: var(--bg);
       border-bottom: 1px solid #334155;
+      background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
     }
     .profile-img {
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
       border: 2px solid var(--accent);
+      margin-top: 1rem;
     }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
+      text-align: center;
     }
     header p {
       font-size: 1.1rem;
       color: var(--muted);
+      text-align: center;
     }
     .links {
-      text-align: center;
       margin-top: 1rem;
+      text-align: center;
     }
     .links a {
       margin: 0 10px;
@@ -75,16 +81,22 @@
     }
     .project {
       background-color: var(--card);
-      padding: 1rem;
+      padding: 1.5rem;
       border-radius: 8px;
       margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     }
     .project h3 {
       margin-top: 0;
       color: var(--text);
     }
     .project p {
-      color: var(--text);
+      color: var(--text-darker);
       font-size: 0.95rem;
     }
     .media-container {
@@ -108,17 +120,16 @@
       color: var(--muted);
       font-size: 0.9rem;
       border-top: 1px solid #334155;
+      background: var(--bg);
     }
   </style>
 </head>
 <body>
 
   <header>
+    <h1>Ratib Khan</h1>
+    <p>4th Year Electrical Engineering Student</p>
     <img src="https://media.licdn.com/dms/image/v2/D5603AQHcus5ktdwdNQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1719613779596?e=2147483647&v=beta&t=4Pj8WBq7mwnGcziInXMoiqdX7NVaVFv9Jmzl-Tu_RnU" alt="Profile Photo" class="profile-img" />
-    <div>
-      <h1>Ratib Khan</h1>
-      <p>4th Year Electrical Engineering Student</p>
-    </div>
   </header>
 
   <div class="links">
@@ -180,9 +191,9 @@
         <li>Digital Systems Design/Computing Systems</li>
         <li>Control Systems</li>
         <li>Embedded Systems</li>
-        <li>Circuit Analysis</li>
+        <li>Circuit Analysus</li>
         <li>Electromagnetics</li>
-
+        <li>Signals and Systems</li>
       </ul>
     </section>
 
