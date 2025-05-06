@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ratib Khan</title>
 
-  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
   <style>
     :root {
       --bg: #0f172a;
@@ -117,7 +114,7 @@
       <h2>Education</h2>
       <p><strong>University of British Columbia</strong><br>
       Bachelor of Applied Science in Electrical Engineering<br>
-      2021 - Present</p>
+      2022 - Present</p>
     </section>
 
     <section>
@@ -125,7 +122,7 @@
 
       <div class="project">
         <h3>ESP32 Audio Spectrum Analyzer</h3>
-        <p>Designed ESP32 Audio Spectrum Analyzer with I2S mic and OLED screen to show spectral content up to 20 kHz using FFT.</p>
+        <p>Designed ESP32 Audio Spectrum Analyzer with I2S mic and OLED screen to show spectral content up to 20 kHz. Applied FFT on I2S data to convert from time domain with a hamming window function to reduce spectral leakage. Determined FFT resolution and bin width to graph on OLED screen using I2C protocol. Verified accuracy of MCU system and graph by comparison with MATLAB FFT simulation.</p>
         <div class="media-container">
           <iframe src="https://www.youtube.com/embed/UAbES5_T3d4" frameborder="0" allowfullscreen></iframe>
           <iframe src="https://www.youtube.com/embed/WD461JWiPi4" frameborder="0" allowfullscreen></iframe>
@@ -134,7 +131,7 @@
 
       <div class="project">
         <h3>RC Metal Detector Car</h3>
-        <p>Designed and built a remote-controlled robot featuring an RF transmitter for wireless communication and a metal detector sensor for object detection.</p>
+        <p>Designed and built a remote-controlled robot featuring an RF transmitter for wireless communication, a joystick-controlled drive system using PWM and an H-bridge for speed and direction control, and a custom inductor-based metal detector that varies frequency with coin proximity.</p>
         <div class="media-container">
           <iframe src="https://www.youtube.com/embed/KhvbS_NcjC8" frameborder="0" allowfullscreen></iframe>
           <img src="image/pic.png" alt="RC Metal Detector Car" />
@@ -143,7 +140,7 @@
 
       <div class="project">
         <h3>Reflow Oven Controller</h3>
-        <p>Programmed a reflow oven controller state machine on an 8051 microcontroller, with user input and thermocouple feedback to precisely follow soldering temperature profiles.</p>
+        <p>Programmed a reflow oven controller state machine in assembly on an 8051 microcontroller to control a standard toaster oven via a solid-state relay. Utilized timers and PWM for precise temperature control, implemented user programmability for soak and reflow temperature/time settings, added a buzzer to signal process completion, and graphed the entire reflow profile in real-time using a Python-based graph.</p>
         <div class="media-container">
           <iframe src="https://www.youtube.com/embed/1xBySyaRcOk" frameborder="0" allowfullscreen></iframe>
           <img src="image/reflowpic.png" alt="Reflow Oven Controller" />
@@ -152,7 +149,7 @@
 
       <div class="project">
         <h3>Line Following Robot</h3>
-        <p>Programmed a Pololu 3pi robot using C and a PIC18 microcontroller to follow lines and navigate a path using infrared sensors.</p>
+        <p>Programmed a Pololu 3pi robot using C and a PIC18 microcontroller to navigate a line-following obstacle course by analyzing drive and sensor hardware, implementing PWM motor control, and using timing logic to handle road features like turns, gaps, and dead ends.</p>
         <div class="media-container">
           <iframe src="https://www.youtube.com/embed/M7R2M71K_JY" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -163,14 +160,13 @@
     <section>
       <h2>Course Topics</h2>
       <ul>
-        <li>Digital Signal Processing</li>
+        <li>Digital System Design/Computing Systems</li>
         <li>Control Systems</li>
         <li>Embedded Systems</li>
-        <li>Digital & Analog Circuits</li>
-        <li>Communication Systems</li>
-        <li>Power Electronics</li>
+        <li>Circuit Analysis</li>
+        <li>Motors and Generators</li>
         <li>Electromagnetics</li>
-        <li>Microcontrollers</li>
+ 
       </ul>
     </section>
 
