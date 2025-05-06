@@ -27,10 +27,20 @@
       color: var(--text);
     }
     header {
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
       padding: 2rem 1rem;
       background-color: var(--bg);
       border-bottom: 1px solid #334155;
+    }
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent);
     }
     header h1 {
       margin: 0;
@@ -41,6 +51,7 @@
       color: var(--muted);
     }
     .links {
+      text-align: center;
       margin-top: 1rem;
     }
     .links a {
@@ -73,7 +84,7 @@
       color: var(--text);
     }
     .project p {
-      color: var(--text); /* white text */
+      color: var(--text);
       font-size: 0.95rem;
     }
     .media-container {
@@ -103,13 +114,17 @@
 <body>
 
   <header>
-    <h1>Ratib Khan</h1>
-    <p>4th Year Electrical Engineering Student</p>
-    <div class="links">
-      <a href="https://www.linkedin.com/in/ratibk/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://drive.google.com/file/d/1LirlIDZa7WIkV0CuNEYChQY0C2lsyNg4/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resume</a>
+    <img src="https://media.licdn.com/dms/image/v2/D5603AQHcus5ktdwdNQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1719613779596?e=2147483647&v=beta&t=4Pj8WBq7mwnGcziInXMoiqdX7NVaVFv9Jmzl-Tu_RnU" alt="Profile Photo" class="profile-img" />
+    <div>
+      <h1>Ratib Khan</h1>
+      <p>4th Year Electrical Engineering Student</p>
     </div>
   </header>
+
+  <div class="links">
+    <a href="https://www.linkedin.com/in/ratibk/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://drive.google.com/file/d/1LirlIDZa7WIkV0CuNEYChQY0C2lsyNg4/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resume</a>
+  </div>
 
   <div class="container">
 
@@ -157,3 +172,25 @@
           <iframe src="https://www.youtube.com/embed/M7R2M71K_JY" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
+    </section>
+
+    <section>
+      <h2>Course Topics</h2>
+      <ul>
+        <li>Digital Systems Design/Computing Systems</li>
+        <li>Control Systems</li>
+        <li>Embedded Systems</li>
+        <li>Circuit Analysis</li>
+        <li>Electromagnetics</li>
+
+      </ul>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Ratib Khan. All rights reserved.
+  </footer>
+
+</body>
+</html>
