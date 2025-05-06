@@ -125,6 +125,20 @@
     <section>
       <h2>Projects</h2>
 
+       <div class="project">
+        <h3>ESP32 Audio Spectrum Analyzer</h3>
+        <p>
+          Designed ESP32 Audio Spectrum Analyzer with I2S mic and OLED screen to show spectral content up to 20 kHz.
+          Applied FFT on I2S data to convert from time domain with a hamming window function to reduce spectral leakage
+          Determined FFT resolution and bin width to graph on OLED screen using I2C protocol. Verified accuracy of MCU system 
+          and graph by comparison with MATLAB FFT simulation
+
+        </p>
+
+         
+        <a href="https://imgur.com/a/etE6SqG" target="_blank" rel="noopener noreferrer">Watch Demo</a>
+      </div>
+
       <div class="project">
         <h3>RC Magnetic Field Detecting Robot</h3>
         <p>
@@ -148,14 +162,6 @@
         <a href="https://imgur.com/a/7cQ93t6" target="_blank" rel="noopener noreferrer">Watch Demo</a>
       </div>
 
-      <div class="project">
-        <h3>Audio FFT on STM32</h3>
-        <p>
-          Implemented real-time FFT using CMSIS DSP library to analyze sound from a mic input on pin A0.
-          Outputs dominant frequencies for basic audio analysis or visualization.
-        </p>
-        <a href="https://www.youtube.com/watch?v=fakeAudioDemo" target="_blank" rel="noopener noreferrer">Watch Demo</a>
-      </div>
 
           <div class="project">
         <h3>Line Following Robot</h3>
